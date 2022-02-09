@@ -9,11 +9,11 @@ keyboard = Controller()
 keylist = ['c', 'x', 'b', 'n', 'u','i','o']
 while True:
     rng_key = random.choice(keylist)
-    with keyboard.pressed('w'):
-     time.sleep(0.5)
+    with keyboard.pressed('s'):
+     time.sleep(2)
     time.sleep(random.randint(100,299))
     with keyboard.pressed('s'):
-     time.sleep(0.5)
+     time.sleep(2)
     time.sleep(random.randint(100,299))
     keyboard.press(rng_key)
     keyboard.release(rng_key)
