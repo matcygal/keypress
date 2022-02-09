@@ -6,14 +6,17 @@ import random
 
 
 keyboard = Controller()
+keylist = ['c', 'x', 'b', 'n', 'u','i','o']
 while True:
+    rng_key = random.choice(keylist)
     with keyboard.pressed('w'):
      time.sleep(0.5)
     time.sleep(random.randint(100,299))
     with keyboard.pressed('s'):
      time.sleep(0.5)
     time.sleep(random.randint(100,299))
-    keyboard.press('c')
-    keyboard.release('c')
+    keyboard.press(rng_key)
+    keyboard.release(rng_key)
     time.sleep(random.randint(100,299))
     print('loop executed')
+
